@@ -15,7 +15,7 @@ export default class Person {
     } else if (planet.toLowerCase() === "jupiter") {
       planetAge = (age * (1 / 11.86)).toFixed(1);
     } else if (planet.toLowerCase() === "earth") {
-      planetAge = age.toFixed(1);
+      planetAge = age;
     } else {
       return "That is not a planet!"
     }
@@ -30,6 +30,8 @@ export default class Person {
   }
  
   galacticYearsUntil (planet, ageUntil) {
-
+    let ageDiff = ageUntil - this.earthAge;
+    let yearsUntil = this.galacticAge(planet, ageDiff);
+    return yearsUntil;
   }
 }
