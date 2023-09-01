@@ -4,22 +4,28 @@ export default class Person {
     this.earthAge = age;
   }
 
-  galacticAge(planet) {
+  galacticAge(planet, age) {
     let planetAge = null;
     if (planet.toLowerCase() === "mercury") {
-      planetAge = parseFloat((this.earthAge * (1 / 0.24)).toFixed(1));
+      planetAge = (age * (1 / 0.24)).toFixed(1);
     } else if (planet.toLowerCase() === "venus") {
-      planetAge = parseFloat((this.earthAge * (1 / 0.62)).toFixed(1));
+      planetAge = (age * (1 / 0.62)).toFixed(1);
     } else if (planet.toLowerCase() === "mars") {
-      planetAge = parseFloat((this.earthAge * (1 / 1.88)).toFixed(1));
+      planetAge = (age * (1 / 1.88)).toFixed(1);
     } else if (planet.toLowerCase() === "jupiter") {
-      planetAge = parseFloat((this.earthAge * (1 / 11.86)).toFixed(1));
+      planetAge = (age * (1 / 11.86)).toFixed(1);
+    } else {
+      return "That is not a planet!"
     }
-    return planetAge;
+    return parseFloat(planetAge);
   }
 
   galacticYearsSince (planet, ageSince) {
-    
+    // ageDiff = this.earthAge - ageSince;
+    // let yearsSince = null;
+    // if (planet.toLowerCase() === "mercury") {
+    //   yearsSince = galacticAge(planet);
+    // }
   }
 
 }

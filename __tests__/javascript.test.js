@@ -14,32 +14,32 @@ describe('Person', () => {
 
   //test 2
   test('it should calculate sethPerson age in Mercury years and values to Person class with one decimal place', () => {
-    let planetAge = sethPerson.galacticAge("Mercury");
+    let planetAge = sethPerson.galacticAge("Mercury", 26);
     expect(planetAge).toEqual(108.3);
   });
 
   //test 3
   test('it should calculate sethPerson age in Venus years and values to Person class with one decimal place', () => {
-    let planetAge = sethPerson.galacticAge("Venus");
+    let planetAge = sethPerson.galacticAge("Venus", 26);
     expect(planetAge).toEqual(41.9);
   });
 
   //test 4
   test('it should calculate sethPerson age in Mars years and values to Person class with one decimal place', () => {
-    let planetAge = sethPerson.galacticAge("Mars");
+    let planetAge = sethPerson.galacticAge("Mars", 26);
     expect(planetAge).toEqual(13.8);
   });
 
   //test 5
   test('it should calculate sethPerson age in Jupiter years and values to Person class with one decimal place', () => {
-    let planetAge = sethPerson.galacticAge("Jupiter");
+    let planetAge = sethPerson.galacticAge("Jupiter", 26);
     expect(planetAge).toEqual(2.2);
   });
 
   //test 6
   test('it should return a planet age of "nul" if asking for a planet that does not exist', () => {
-    let planetAge = sethPerson.galacticAge("fake-planet");
-    expect(planetAge).toEqual(null);
+    let planetAge = sethPerson.galacticAge("fake-planet", 26);
+    expect(planetAge).toEqual("That is not a planet!");
   });
 
   //test 7
