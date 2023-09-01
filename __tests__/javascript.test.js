@@ -84,4 +84,10 @@ test('it should test for false age entries for galacticYearsUntil', () => {
   expect(falseEntry).toEqual("Please enter an age older than your current age!")
 });
 
+//test 14
+test('it should test for false age entries for galacticAge', () => {
+  let falseEntry = sethPerson.galacticAge("Earth", -25);
+  expect(falseEntry).toEqual("Please enter a valid age!")
+});
+
 });
