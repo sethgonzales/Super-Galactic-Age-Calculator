@@ -22,15 +22,12 @@ export default class Person {
     return parseFloat(planetAge);
   }
 
-
   galacticYearsSince (planet, ageSince) {
     let ageDiff = this.earthAge - ageSince;
     let yearsSince = this.galacticAge(planet, ageDiff);
-    
-    if (ageDiff > this.earthAge) {
+    if (ageDiff > this.earthAge || ageDiff < 0) {
       yearsSince = "Please enter an age younger than your current age!"
       return yearsSince;
-
     }
     return yearsSince;
   }

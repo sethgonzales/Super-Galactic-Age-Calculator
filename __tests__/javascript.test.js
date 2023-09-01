@@ -73,9 +73,10 @@ test('it should calculate years passed on a planet until sethPerson turns 30 wit
 });
 
 //test 12
-test('it should test for negative values in Person class constructor', () => {
-  let yearsSince = sethPerson.galacticYearsSince("Earth", -20);
+test('it should test for negative age entries for galacticYearsSince', () => {
+  let yearsSince = sethPerson.galacticYearsSince("Earth", 28);
   expect(yearsSince).toEqual("Please enter an age younger than your current age!")
 });
+
 
 });
