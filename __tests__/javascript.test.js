@@ -12,8 +12,8 @@ describe('Person', () => {
   });
 
   test('it should calculate sethPerson age in Mercury years and values to Person class with one decimal place', () => {
-    sethPerson.galacticAge("Mercury", 26);
-    expect(sethPerson.galacticAge("Mercury", 26)).toEqual(108.3);
+    let planetAge = sethPerson.galacticAge("Mercury");
+    expect(planetAge).toEqual(108.3);
   });
 
 
