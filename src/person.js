@@ -17,5 +17,9 @@ export default class Person {
     }
     return planetAge;
   }
-  
+
+  galacticYearsSince (planet, ageSince) {
+    
+  }
+
 }
