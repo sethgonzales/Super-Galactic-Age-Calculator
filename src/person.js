@@ -21,11 +21,12 @@ export default class Person {
   }
 
   galacticYearsSince (planet, ageSince) {
-    // ageDiff = this.earthAge - ageSince;
-    // let yearsSince = null;
-    // if (planet.toLowerCase() === "mercury") {
-    //   yearsSince = galacticAge(planet);
-    // }
+    let ageDiff = this.earthAge - ageSince;
+    let yearsSince = null;
+    if (planet.toLowerCase() === "mercury") {
+      yearsSince = this.galacticAge(planet, ageDiff);
+    }
+    return yearsSince;
   }
 
 }
