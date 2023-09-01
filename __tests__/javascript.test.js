@@ -74,13 +74,13 @@ test('it should calculate years passed on a planet until sethPerson turns 30 wit
 
 //test 12
 test('it should test for false age entries for galacticYearsSince', () => {
-  let falseEntry = sethPerson.galacticYearsSince("Earth", 28);
+  let falseEntry = sethPerson.galacticYearsSince("Earth", -28);
   expect(falseEntry).toEqual("Please enter an age younger than your current age!")
 });
 
 //test 13
 test('it should test for false age entries for galacticYearsUntil', () => {
-  let falseEntry = sethPerson.galacticYearsSince("Earth", 25);
+  let falseEntry = sethPerson.galacticYearsUntil("Earth", -25);
   expect(falseEntry).toEqual("Please enter an age older than your current age!")
 });
 

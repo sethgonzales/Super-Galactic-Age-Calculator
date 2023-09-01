@@ -26,7 +26,7 @@ export default class Person {
     let ageDiff = this.earthAge - ageSince;
     let yearsSince = this.galacticAge(planet, ageDiff);
     let falseEntry = "Please enter an age younger than your current age!"
-    if (ageDiff > this.earthAge || ageDiff < 0) {
+    if (ageSince < 0 || ageDiff < 0) {
       return falseEntry;
     }
     return yearsSince;
@@ -35,6 +35,10 @@ export default class Person {
   galacticYearsUntil (planet, ageUntil) {
     let ageDiff = ageUntil - this.earthAge;
     let yearsUntil = this.galacticAge(planet, ageDiff);
+    let falseEntry = "Please enter an age older than your current age!"
+    if (ageUntil < 0 || ageDiff < 0) {
+      return falseEntry;
+    }
     return yearsUntil;
   }
 }
