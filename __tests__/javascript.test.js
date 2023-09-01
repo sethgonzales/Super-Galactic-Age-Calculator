@@ -26,4 +26,9 @@ describe('Person', () => {
     expect(planetAge).toEqual(13.8);
   });
 
+  test('it should calculate sethPerson age in Jupiter years and values to Person class with one decimal place', () => {
+    let planetAge = sethPerson.galacticAge("Jupiter");
+    expect(planetAge).toEqual(2.2);
+  });
+
 });
