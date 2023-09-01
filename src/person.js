@@ -14,6 +14,8 @@ export default class Person {
       planetAge = (age * (1 / 1.88)).toFixed(1);
     } else if (planet.toLowerCase() === "jupiter") {
       planetAge = (age * (1 / 11.86)).toFixed(1);
+    } else if (planet.toLowerCase() === "earth") {
+      planetAge = age.toFixed(1);
     } else {
       return "That is not a planet!"
     }

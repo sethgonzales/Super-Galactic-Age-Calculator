@@ -57,7 +57,7 @@ describe('Person', () => {
 //test 9
 test('it should return sethPerson Earth age to one decimal place', () => {
   let planetAge = sethPerson.galacticAge("Earth", 26);
-  expect(planetAge).toEqual(26);
+  expect(planetAge).toEqual(26.0);
 });
 
 });
