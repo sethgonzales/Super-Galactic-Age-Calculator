@@ -25,5 +25,5 @@ export default class Person {
     let yearsSince = this.galacticAge(planet, ageDiff);
     return yearsSince;
   }
-
+ 
 }
