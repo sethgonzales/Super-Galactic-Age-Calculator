@@ -5,4 +5,7 @@ import Person from './person.js';
 
 function handleForm (event) {
   event.preventDefault();
+
+  const nameInput = document.querySelector('#name-input').value;
+  const newPerson = new Person (nameInput, ageInput);
 }
