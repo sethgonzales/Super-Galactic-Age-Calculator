@@ -7,7 +7,7 @@ describe('Person', () => {
     sethPerson = new Person("Seth", 26);
   });
   test('it should return the properties of the Person class instance of newPerson', () => {
-    expect(sethPerson).toEqual({ name: "Seth", age: "26" });
+    expect(sethPerson).toEqual({ name: "Seth", earthAge: 26 });
   });
 
 });
