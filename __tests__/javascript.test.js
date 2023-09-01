@@ -23,7 +23,7 @@ describe('Person', () => {
 
   test('it should calculate sethPerson age in Mars years and values to Person class with one decimal place', () => {
     let planetAge = sethPerson.galacticAge("Mars");
-    expect(planetAge).toEqual(108.3);
+    expect(planetAge).toEqual(13.8);
   });
 
 });
