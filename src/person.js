@@ -3,4 +3,9 @@ export default class Person {
     this.name = name;
     this.earthAge = age;
   }
+
+  calcMarsAge(person) {
+
+  }
+
 }
