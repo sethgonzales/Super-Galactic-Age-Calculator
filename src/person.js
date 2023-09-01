@@ -6,6 +6,11 @@ export default class Person {
 
   galacticAge(planet, age) {
     let planetAge = null;
+    let falseEntry = "Please enter a valid age!";
+    if (age < 0) {
+      return falseEntry;
+    }
+
     if (planet.toLowerCase() === "mercury") {
       planetAge = (age * (1 / 0.24)).toFixed(1);
     } else if (planet.toLowerCase() === "venus") {
@@ -17,25 +22,25 @@ export default class Person {
     } else if (planet.toLowerCase() === "earth") {
       planetAge = age;
     } else {
-      return "That is not a planet!"
+      return "That is not a planet!";
     }
     return parseFloat(planetAge);
   }
 
-  galacticYearsSince (planet, ageSince) {
+  galacticYearsSince(planet, ageSince) {
     let ageDiff = this.earthAge - ageSince;
     let yearsSince = this.galacticAge(planet, ageDiff);
-    let falseEntry = "Please enter an age younger than your current age!"
+    let falseEntry = "Please enter an age younger than your current age!";
     if (ageSince < 0 || ageDiff < 0) {
       return falseEntry;
     }
     return yearsSince;
   }
- 
-  galacticYearsUntil (planet, ageUntil) {
+
+  galacticYearsUntil(planet, ageUntil) {
     let ageDiff = ageUntil - this.earthAge;
     let yearsUntil = this.galacticAge(planet, ageDiff);
-    let falseEntry = "Please enter an age older than your current age!"
+    let falseEntry = "Please enter an age older than your current age!";
     if (ageUntil < 0 || ageDiff < 0) {
       return falseEntry;
     }
