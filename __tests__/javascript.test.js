@@ -31,6 +31,9 @@ describe('Person', () => {
     expect(planetAge).toEqual(2.2);
   });
 
-  
+  test('it should return a planet age of "nul" if asking for a planet that does not exist', () => {
+    let planetAge = sethPerson.galacticAge("fake-planet");
+    expect(planetAge).toEqual(null);
+  });
 
 });
