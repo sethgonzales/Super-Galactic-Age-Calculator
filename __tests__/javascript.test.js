@@ -66,4 +66,10 @@ test('it should return years passed in Earth years based on sethPerson current a
   expect(planetAge).toEqual(2);
 });
 
+//test 11
+test('it should calculate years passed on a planet until sethPerson turns 30 with one decimal place', () => {
+  let yearsUntil = sethPerson.galacticYearsUntil("Mercury", 30);
+  expect(yearsUntil).toEqual(16.7);
+});
+
 });
