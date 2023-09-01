@@ -60,4 +60,10 @@ test('it should return sethPerson Earth age to one decimal place', () => {
   expect(planetAge).toEqual(26.0);
 });
 
+//test 10
+test('it should return years passed in Earth years based on sethPerson current and former age', () => {
+  let planetAge = sethPerson.galacticAge("Earth", 24);
+  expect(planetAge).toEqual(2);
+});
+
 });
