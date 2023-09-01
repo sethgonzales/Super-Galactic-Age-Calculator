@@ -22,6 +22,7 @@ export default class Person {
     return parseFloat(planetAge);
   }
 
+
   galacticYearsSince (planet, ageSince) {
     let ageDiff = this.earthAge - ageSince;
     let yearsSince = this.galacticAge(planet, ageDiff);
