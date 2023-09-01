@@ -4,8 +4,7 @@ export default class Person {
     this.earthAge = age;
   }
 
-  calcMarsAge(person) {
+  galacticAge(age) {
 
   }
-
 }
