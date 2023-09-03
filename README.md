@@ -1,6 +1,6 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### A calculator for planetary age comparisons.
 
 #### By Seth Gonzales
 
@@ -13,6 +13,8 @@
 * npm v8.1.2
 
 ## Description
+
+The Super Galactic Age Calculator will take your age and provide you a reference for how old you are on another planet in our solar system. You may also find the number of years since or years until another birthday!
 
 ## Setup/Installation Requirements
 
@@ -28,8 +30,9 @@
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* * Viewing not optimized for mobile devices or smaller screens.
+* * UI not created.
+
 
 ## License
 
