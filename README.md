@@ -6,8 +6,6 @@
 
 ## Technologies Used
 
-* HTML
-* CSS 
 * JavaScript
 * Node v16.13.1
 * npm v8.1.2
@@ -18,19 +16,17 @@ The Super Galactic Age Calculator will take your age and provide you a reference
 
 ## Setup/Installation Requirements
 
-* Navigate to the __________ repository on [GitHub](https://github.com/sethgonzales/file-name).
+* Navigate to the Super Galactic Age Calculator repository on [GitHub](https://github.com/sethgonzales/Super-Galactic-Age-Calculator).
 * Clone the repository from GitHub.
 * In terminal...
-  * Open the clone using `$ git clone https://github.com/sethgonzales/file-name`.
+  * Open the clone using `$ git clone https://github.com/sethgonzales/Super-Galactic-Age-Calculator`.
   * Run `$ npm install` from the root directory to install all packages.
   * Build the project using webpack with `$ npm run build`.
   * Lint JavaScript files with `$ npm run lint`.
   * Run tests in Jest with `$ npm run test`.
-  * Deploy a development server with `$ npm run start`.
 
 ## Known Bugs
 
-* * Viewing not optimized for mobile devices or smaller screens.
 * * UI not created.
 
 
